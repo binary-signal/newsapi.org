@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 class NewsApiError(Exception):
     """ basic exception for errors raised by News Api"""
 

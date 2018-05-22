@@ -51,10 +51,10 @@ class Client:
         """ on success """
         return response
 
-    def top_headlines(self, source=None, country=None, category=None, q=None, pageSize=20, page=None):
+    def top_headlines(self, sources=None, country=None, category=None, q=None, pageSize=20, page=None):
         """
 
-        :param source:
+        :param sources:
         :param country:
         :param category:
         :param q:
@@ -62,7 +62,7 @@ class Client:
         :param page:
         :return:
         """
-        response = self.api_call(endpoint='top-headlines', payload={'sources': source,
+        response = self.api_call(endpoint='top-headlines', payload={'sources': sources,
                                                                     'country': country,
                                                                     'category': category,
                                                                     'q': q,
