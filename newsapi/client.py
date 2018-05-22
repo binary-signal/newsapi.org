@@ -36,7 +36,7 @@ class Client:
         """ on error """
         if resp.status_code != 200:
             self.logger.error("{} {} {}".format(response['message'], response['status'], response['code'], ))
-            if resp.status_code == 400:
+            if resp.status_code   == 400:
                 raise BadRequest(response['message'])
             elif resp.status_code == 401:
                 raise UnauthorizedRequest(response['message'])
